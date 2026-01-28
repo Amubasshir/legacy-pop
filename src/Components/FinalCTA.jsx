@@ -41,36 +41,18 @@ const FinalCTA = () => {
           <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
             {/* Primary Button */}
             <motion.button
-              initial="initial"
-              whileHover="hover"
+              initial={{ backgroundColor: '#1c1917' }} // stone-900
+              whileHover={{ backgroundColor: '#ea580c' }} // orange-600
               whileTap={{ scale: 0.97 }}
-              className="w-full sm:w-auto group relative px-5 md:px-8 py-4 bg-stone-900 text-white rounded-full md:text-lg font-bold shadow-xl shadow-stone-900/10 active:scale-95 hover:bg-orange-600 transition-all duration-300 cursor-pointer"
+              transition={{ duration: 0.3 }}
+              className="w-full sm:w-auto px-5 md:px-8 py-4 
+  text-white rounded-full md:text-lg font-bold 
+  shadow-xl shadow-stone-900/10 cursor-pointer"
             >
-              {/* টেক্সট এনিমেশন: ব্যাকগ্রাউন্ড কালারের সাথে মিলিয়ে টেক্সট কালার পরিবর্তন হবে */}
-              <motion.span
-                variants={{
-                  initial: { color: '#ffffff' },
-                  hover: { color: '#1c1917' }, // stone-900 কালার
-                }}
-                transition={{ duration: 0.5, ease: 'easeInOut' }}
-                className="relative z-10 flex items-center"
-              >
+              <span className="flex items-center justify-center">
                 Start a Legacy Page (Free)
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform duration-500" />
-              </motion.span>
-
-              {/* স্লাইড-ইন ব্যাকগ্রাউন্ড: এটি খুব স্মুথলি বাম থেকে ডানে আসবে */}
-              <motion.div
-                variants={{
-                  initial: { x: '-100%' },
-                  hover: { x: 0 },
-                }}
-                transition={{
-                  duration: 0.6,
-                  ease: [0.16, 1, 0.3, 1], // কাস্টম বেজিয়ার কার্ভ (Smooth/Solo effect)
-                }}
-                className="absolute inset-0 bg-orange-50"
-              />
+                <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </span>
             </motion.button>
 
             {/* Secondary Button - Fixed to be visible on light bg */}

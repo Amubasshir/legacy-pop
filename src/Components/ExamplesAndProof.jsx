@@ -11,7 +11,7 @@ import {
   Heart,
   BadgeCheck,
 } from 'lucide-react';
-
+import { motion } from 'framer-motion';
 const ExamplesAndProof = () => {
   const examples = [
     {
@@ -167,13 +167,20 @@ const ExamplesAndProof = () => {
         {/* --- CTA BUTTON --- */}
         <div className="mt-20 flex justify-center">
           <div className="relative group">
-            {/* Glow Effect behind button */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-amber-400 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-
-            <button className="relative flex items-center px-10 py-5 bg-stone-900 text-white rounded-full text-lg font-bold shadow-2xl transition-transform transform group-hover:-translate-y-1 cursor-pointer">
-              View All Examples
-              <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            <motion.button
+              initial={{ backgroundColor: '#1c1917' }} // stone-900
+              whileHover={{ backgroundColor: '#ea580c' }} // orange-600
+              whileTap={{ scale: 0.97 }}
+              transition={{ duration: 0.3 }}
+              className="w-full sm:w-auto px-5 md:px-8 py-4 
+  text-white rounded-full md:text-lg font-bold 
+  shadow-xl shadow-stone-900/10 cursor-pointer"
+            >
+              <span className="flex items-center justify-center">
+                View All Examples
+                <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </span>
+            </motion.button>
           </div>
         </div>
       </div>

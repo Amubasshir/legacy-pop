@@ -1,5 +1,5 @@
 'use client';
-
+import { motion } from 'framer-motion';
 import React from 'react';
 import { ArrowRight, Heart, Star } from 'lucide-react';
 
@@ -56,12 +56,21 @@ const HeroSection = () => {
           */}
           <div className="w-full sm:w-auto flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up delay-300">
             {/* Primary Button */}
-            <button className="w-full sm:w-auto group relative px-5 md:px-8 py-4 bg-stone-900 text-white rounded-full md:text-lg font-bold shadow-xl shadow-stone-900/10 active:scale-95 hover:bg-orange-600 transition-all duration-300 cursor-pointer">
+
+            <motion.button
+              initial={{ backgroundColor: '#1c1917' }} // stone-900
+              whileHover={{ backgroundColor: '#ea580c' }} // orange-600
+              whileTap={{ scale: 0.97 }}
+              transition={{ duration: 0.3 }}
+              className="w-full sm:w-auto px-5 md:px-8 py-4 
+  text-white rounded-full md:text-lg font-bold 
+  shadow-xl shadow-stone-900/10 cursor-pointer"
+            >
               <span className="flex items-center justify-center">
                 Start a Legacy Page (Free)
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
-            </button>
+            </motion.button>
 
             {/* Secondary Button */}
             <button className="w-full sm:w-auto px-8 py-4 text-stone-700 bg-white/80 backdrop-blur-sm border border-stone-200 rounded-full text-lg font-medium active:bg-stone-100 hover:bg-white hover:border-stone-300 transition-all shadow-sm cursor-pointer">
