@@ -157,7 +157,7 @@ const HowItWorks = () => {
           {/* --- STEP 2: INVITE --- */}
           <StepCard
             step="02"
-            title="Invite & Gather"
+            title="Invite Family & Friends"
             description="Copy the private link and text it to family, or download the QR code for the funeral program. No account sign-up is needed for them."
             iconVisual={
               // Custom Composite Icon 2
@@ -176,7 +176,7 @@ const HowItWorks = () => {
           {/* --- STEP 3: SHARE --- */}
           <StepCard
             step="03"
-            title="Collect Memories"
+            title="Share Memories"
             description="The page fills up as everyone contributes. Photos, voice notes, and written stories combine to create a full picture of their life."
             iconVisual={
               // Custom Composite Icon 3

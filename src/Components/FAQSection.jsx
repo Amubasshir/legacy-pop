@@ -43,7 +43,7 @@ const FAQSection = () => {
     <section className="relative w-full py-24 lg:py-32 bg-[#FDFCF8] overflow-hidden">
       {/* --- ADVANCED BACKGROUND ANIMATION --- */}
 
-      <div className="relative z-10 container mx-auto px-6 sm:px-8">
+      <div className="relative z-10 container mx-auto px-6 sm:px-8 lg:px-12">
         {/* --- HEADER --- */}
         <div className="text-center mb-16">
           <motion.h2

@@ -19,8 +19,7 @@ const ExamplesAndProof = () => {
       name: 'Eleanor Ray',
       dates: '1945 — 2023',
       role: 'Mother & Grandmother',
-      image:
-        'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://i.ibb.co.com/SwF9sKS4/Mother-Grandmother.jpg',
       quote:
         'I was afraid her stories would fade with time. Now, my children can visit this page and truly know who their grandmother was.',
       author: 'Sarah J.',
@@ -32,8 +31,7 @@ const ExamplesAndProof = () => {
       name: 'David Chen',
       dates: '1980 — 2024',
       role: 'Artist & Friend',
-      image:
-        'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://i.ibb.co.com/j9cwk9KC/Artist-Friend.jpg',
       quote:
         'The funeral went by in a blur. This page gave us a place to pause, cry, laugh, and remember him properly.',
       author: 'Michael T.',
@@ -45,8 +43,7 @@ const ExamplesAndProof = () => {
       name: 'Margaret & Joe',
       dates: '50th Anniversary',
       role: 'Joint Tribute',
-      image:
-        'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://i.ibb.co.com/MkbwG060/Anniversary.jpg',
       quote:
         "We created a joint tribute for our parents. Seeing old photos uploaded by distant cousins we'd never met was magical.",
       author: 'Emily R.',
@@ -72,8 +69,9 @@ const ExamplesAndProof = () => {
               </span>
             </h2>
             <p className="font-sans text-xl text-stone-600 leading-relaxed max-w-2xl mx-auto">
-              We’ve stripped away the complexity. Build a lasting sanctuary in
-              three simple steps, no technical skills required.
+              "Join thousands of families who have chosen a more personal way to
+              remember. Create a timeless tribute where memories are celebrated,
+              shared, and kept safe for generations to come."
             </p>
           </div>
         </div>
@@ -165,17 +163,18 @@ const ExamplesAndProof = () => {
             </div>
           ))}
         </div>
-        <div className="hidden md:flex gap-4 justify-center mt-16">
-          <button className="group flex items-center gap-2 px-6 py-3 rounded-full border border-stone-200 bg-white text-stone-600 font-medium hover:bg-stone-50 hover:border-stone-300 transition-all shadow-sm cursor-pointer">
-            View All Examples
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
-        </div>
-        {/* Mobile-only CTA */}
-        <div className="mt-16 text-center md:hidden">
-          <button className="inline-flex items-center px-8 py-4 bg-stone-900 text-white rounded-full text-lg font-bold">
-            Explore Tributes
-          </button>
+        {/* --- CTA BUTTON --- */}
+        {/* --- CTA BUTTON --- */}
+        <div className="mt-20 flex justify-center">
+          <div className="relative group">
+            {/* Glow Effect behind button */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-amber-400 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+
+            <button className="relative flex items-center px-10 py-5 bg-stone-900 text-white rounded-full text-lg font-bold shadow-2xl transition-transform transform group-hover:-translate-y-1 cursor-pointer">
+              View All Examples
+              <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </div>
         </div>
       </div>
     </section>

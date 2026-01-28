@@ -34,9 +34,10 @@ const HeroSection = () => {
               - lg:text-8xl: Desktop size
           */}
           <h1 className="font-serif text-4xl font-bold sm:text-6xl lg:text-8xl text-stone-900 leading-[1.15] tracking-tight mb-6 text-center drop-shadow-sm opacity-0 animate-fade-in-up delay-100">
-            Celebrate a life <br className="hidden sm:block" />
+            Create a Living Tribute
+            <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-600 italic px-1">
-              beautifully lived.
+              That Lasts Forever{' '}
             </span>
           </h1>
 
@@ -44,9 +45,9 @@ const HeroSection = () => {
               - text-base: Base size for mobile
               - md:text-xl: Larger on desktop
           */}
-          <p className="font-sans text-base sm:text-lg md:text-2xl text-stone-700 max-w-xl mx-auto mb-8 sm:mb-10 leading-relaxed text-center opacity-0 animate-fade-in-up delay-200">
-            A simple, elegant space to collect photos, stories, and memories.
-            Because love doesn't end—it just changes form.
+          <p className="font-sans text-base sm:text-lg md:text-2xl text-stone-700 max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed text-center opacity-0 animate-fade-in-up delay-200">
+            A digital remembrance page where stories, photos, and love live
+            on—shared with family and preserved for generations.
           </p>
 
           {/* Action Buttons 
@@ -55,16 +56,16 @@ const HeroSection = () => {
           */}
           <div className="w-full sm:w-auto flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up delay-300">
             {/* Primary Button */}
-            <button className="w-full sm:w-auto group relative px-8 py-4 bg-stone-900 text-white rounded-full text-lg font-bold shadow-xl shadow-stone-900/10 active:scale-95 hover:bg-orange-600 transition-all duration-300 cursor-pointer">
+            <button className="w-full sm:w-auto group relative px-5 md:px-8 py-4 bg-stone-900 text-white rounded-full md:text-lg font-bold shadow-xl shadow-stone-900/10 active:scale-95 hover:bg-orange-600 transition-all duration-300 cursor-pointer">
               <span className="flex items-center justify-center">
-                Create a Tribute
+                Start a Legacy Page (Free)
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </button>
 
             {/* Secondary Button */}
             <button className="w-full sm:w-auto px-8 py-4 text-stone-700 bg-white/80 backdrop-blur-sm border border-stone-200 rounded-full text-lg font-medium active:bg-stone-100 hover:bg-white hover:border-stone-300 transition-all shadow-sm cursor-pointer">
-              View Examples
+              See Example Pages
             </button>
           </div>
 

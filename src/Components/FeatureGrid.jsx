@@ -15,7 +15,7 @@ import {
 const FeatureGrid = () => {
   const features = [
     {
-      title: 'Story Timeline',
+      title: 'Story Feed',
       description:
         'A living chronicle. Friends can post anecdotes and condolences in a beautiful chronological feed.',
       icon: <ScrollText className="w-6 h-6 text-stone-800" />,
@@ -33,7 +33,7 @@ const FeatureGrid = () => {
       rotation: 'rotate-3',
     },
     {
-      title: 'Smart QR Sharing',
+      title: 'Social Sharing + QR Codes',
       description:
         'Generate a custom QR code instantly. Print it on funeral programs so guests can upload photos right from the pews.',
       icon: <QrCode className="w-6 h-6 text-blue-700" />,
@@ -51,7 +51,7 @@ const FeatureGrid = () => {
       rotation: 'rotate-2',
     },
     {
-      title: 'Ironclad Privacy',
+      title: 'Privacy Controls',
       description:
         'Total control. Set pages to Public, Password-Protected, or Invite-Only for intimate family circles.',
       icon: <ShieldCheck className="w-6 h-6 text-emerald-700" />,
@@ -60,7 +60,7 @@ const FeatureGrid = () => {
       rotation: '-rotate-3',
     },
     {
-      title: 'Legacy Reminders',
+      title: 'Anniversary Reminders',
       description:
         'We never let memories fade. Automated, gentle emails on birthdays and anniversaries invite family to visit.',
       icon: <CalendarHeart className="w-6 h-6 text-purple-700" />,

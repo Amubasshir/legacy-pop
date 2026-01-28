@@ -16,14 +16,16 @@ const WhyItMatters = () => {
         {/* --- HEADER --- */}
         <div className="max-w-full mb-16 lg:mb-20 text-center">
           <h2 className="font-serif text-5xl sm:text-6xl font-medium text-stone-900 leading-[1.05] text-center mb-6">
-            Preserving the past, <br />
+            Memories Fade.
+            <br />
             <span className="italic  text-stone-500 relative inline-block">
-              protecting the future.
+              Legacy Doesn’t Have To.
             </span>
           </h2>
           <p className="font-sans text-xl text-stone-600 leading-relaxed max-w-2xl mx-auto">
-            We’ve stripped away the complexity. Build a lasting sanctuary in
-            three simple steps, no technical skills required.
+            Photos get lost. Stories are forgotten. LegacyPop brings everything
+            together in a place your family can return to—for years,
+            generations, and beyond.
           </p>
         </div>
 

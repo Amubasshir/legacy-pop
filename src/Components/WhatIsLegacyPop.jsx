@@ -6,20 +6,16 @@ const WhatIsLegacyPop = () => {
     <section className="relative w-full py-24 lg:py-32 bg-[#FDFCF8]">
       {/* Background Texture: Subtle grain/noise for a paper feel */}
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-12">
+      <div className="relative z-10 container mx-auto px-6 sm:px-8 lg:px-12">
         {/* 1. Centered Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 lg:mb-20">
           <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium text-stone-900 mb-6 leading-tight">
-            More than just a photo album.
-            <br />
-            <span className="italic text-stone-500">
-              A sanctuary for memories.
-            </span>
+            What Is <span className="italic text-stone-500">LegacyPop?</span>
           </h2>
           <p className="font-sans text-xl text-stone-600 leading-relaxed">
-            LegacyPop (Pages of Praise) ensures nothing meaningful is ever lost.
-            We combine the beauty of a physical photo book with the connection
-            of a community.
+            LegacyPop (Pages of Praise) helps families preserve the memories
+            that matter most. Friends and family can share stories, photos, and
+            moments in one beautiful place—so nothing meaningful is ever lost.
           </p>
         </div>
 

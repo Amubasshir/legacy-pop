@@ -44,7 +44,7 @@ const FinalCTA = () => {
               initial="initial"
               whileHover="hover"
               whileTap={{ scale: 0.97 }}
-              className="group relative inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white bg-stone-900 rounded-full overflow-hidden shadow-xl shadow-stone-200 border border-stone-900 cursor-pointer"
+              className="w-full sm:w-auto group relative px-5 md:px-8 py-4 bg-stone-900 text-white rounded-full md:text-lg font-bold shadow-xl shadow-stone-900/10 active:scale-95 hover:bg-orange-600 transition-all duration-300 cursor-pointer"
             >
               {/* টেক্সট এনিমেশন: ব্যাকগ্রাউন্ড কালারের সাথে মিলিয়ে টেক্সট কালার পরিবর্তন হবে */}
               <motion.span
@@ -77,7 +77,7 @@ const FinalCTA = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center px-5 md:px-10 py-5 font-bold text-stone-600 border-2 border-stone-200 rounded-full bg-transparent hover:border-stone-400 hover:bg-stone-50 hover:text-stone-900 transition-all cursor-pointer"
+              className="inline-flex items-center justify-center px-5 md:px-10 py-5 font-semibold text-stone-600 border-2 border-stone-200 rounded-full bg-transparent hover:border-stone-400 hover:bg-stone-50 hover:text-stone-900 transition-all cursor-pointer"
             >
               See Example Pages
             </motion.button>
