@@ -17,7 +17,7 @@ const HeroSection = () => {
     <section className="relative bg-[#FAFAF9] text-stone-900 overflow-hidden py-20 lg:py-28">
       {/* Background Lighting Effects (Adjusted for Light Mode) */}
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT: Text Content */}
           <div className="max-w-2xl">
@@ -127,7 +127,7 @@ const HeroSection = () => {
               </div>
 
               {/* 3. CONTENT GRID (Inside the Card) */}
-              <div className="px-6 pb-6 space-y-4">
+              <div className="px-4 pb-6 space-y-4">
                 {/* Story Card */}
                 <div className="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
                   <div className="flex items-center gap-2 mb-2">
@@ -153,19 +153,42 @@ const HeroSection = () => {
                       </span>
                     </div>
                     <div className="grid grid-cols-2 gap-2">
-                      <div className="aspect-square bg-stone-200 rounded-lg overflow-hidden">
+                      <div className="aspect-square h-25 w-40 bg-stone-200 rounded-lg overflow-hidden">
                         <img
                           src="https://i.ibb.co.com/21wGfVq5/Image-3.jpg"
                           className="w-full h-full object-cover"
                           alt="mem1"
                         />
                       </div>
-                      <div className="aspect-square bg-stone-200 rounded-lg overflow-hidden">
+                      <div className="aspect-square h-25 w-40 bg-stone-200 rounded-lg overflow-hidden">
                         <img
                           src="https://i.ibb.co.com/5wZscjG/Image-2.jpg"
                           className="w-full h-full object-cover"
                           alt="mem2"
                         />
+                      </div>
+                      <div className="aspect-square h-25 w-40 bg-stone-200 rounded-lg overflow-hidden">
+                        <img
+                          src="https://i.ibb.co.com/bTYpBCL/Whats-Apjfj.jpg"
+                          className="h-25 w-40 object-cover"
+                          alt="mem2"
+                        />
+                      </div>
+                      <div className="h-25 w-40 relative bg-stone-200 rounded-lg border border-stone-200 overflow-hidden flex items-center justify-center shadow-sm cursor-pointer hover:opacity-90 transition">
+                        {/* Background Image */}
+                        <img
+                          src="https://i.ibb.co.com/FkLzjZF2/ehrh.jpg" // You can change this image
+                          className="absolute inset-0 w-full h-full object-cover"
+                          alt="More"
+                        />
+
+                        {/* Dark Overlay (to make text readable) */}
+                        <div className="absolute inset-0 bg-black/50"></div>
+
+                        {/* The Number Text */}
+                        <span className="relative z-10 text-white text-md font-bold">
+                          +24
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -178,16 +201,66 @@ const HeroSection = () => {
                         Tribute Video
                       </span>
                     </div>
-                    <div className="aspect-video bg-stone-900 rounded-lg overflow-hidden relative group cursor-pointer">
-                      <img
-                        src="https://i.ibb.co.com/xKBJqJfj/Image-1.jpg"
-                        className="w-full h-full object-cover opacity-60"
-                        alt="video thumb"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-8 h-8 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform">
-                          <Play className="w-3 h-3 text-white fill-white ml-0.5" />
+
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="aspect-video bg-stone-900 rounded-lg overflow-hidden relative group cursor-pointer h-25 w-40">
+                        <img
+                          src="https://i.ibb.co.com/xKBJqJfj/Image-1.jpg"
+                          className="w-full h-full object-cover opacity-60"
+                          alt="video thumb"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform">
+                            <Play className="w-3 h-3 text-white fill-white ml-0.5" />
+                          </div>
                         </div>
+                      </div>
+
+                      <div className="aspect-video bg-stone-900 rounded-lg overflow-hidden relative group cursor-pointer h-25 w-40">
+                        <img
+                          src="https://i.ibb.co.com/CsMNjgpH/Whats.jpg"
+                          className="w-full h-full object-cover opacity-60"
+                          alt="video thumb"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform">
+                            <Play className="w-3 h-3 text-white fill-white ml-0.5" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="aspect-video bg-stone-900 rounded-lg overflow-hidden relative group cursor-pointer h-25 w-40">
+                        <img
+                          src="https://i.ibb.co.com/99F1cZVg/th.jpg"
+                          className="w-full h-full object-cover opacity-60"
+                          alt="video thumb"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform">
+                            <Play className="w-3 h-3 text-white fill-white ml-0.5" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="h-25 w-40 relative bg-stone-200 rounded-lg border border-stone-200 overflow-hidden flex items-center justify-center shadow-sm cursor-pointer hover:opacity-90 transition">
+                        {/* Background Image */}
+                        <img
+                          src="https://i.ibb.co.com/B5Bc5MMR/htr.jpg" // You can change this image
+                          className="absolute inset-0 w-full h-full object-cover"
+                          alt="video thumb"
+                        />
+
+                        {/* Dark Overlay (to make text readable) */}
+                        <div className="absolute inset-0 bg-black/50"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform">
+                            <Play className="w-3 h-3 text-white fill-white ml-0.5" />
+                          </div>
+                        </div>
+                        {/* The Number Text */}
+                        <span className="relative z-10 text-black text-md font-bold">
+                          +15
+                        </span>
                       </div>
                     </div>
                   </div>
