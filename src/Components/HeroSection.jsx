@@ -1,151 +1,202 @@
 'use client';
-import { motion } from 'framer-motion';
 import React from 'react';
-import { ArrowRight, Heart, Star } from 'lucide-react';
+import {
+  Play,
+  Heart,
+  Star,
+  Image as ImageIcon,
+  MessageCircle,
+  ArrowRight,
+  ChevronRight,
+  MessageSquare,
+} from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden bg-[#FDFCF8]">
-      <div className="absolute inset-0 z-0 h-full w-full">
-        <img
-          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2232&auto=format&fit=crop"
-          alt="Sunlight filtering through trees"
-          className="w-full h-full object-cover object-center opacity-60 animate-pan-slow"
-        />
-        {/* Stronger gradient on mobile for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/20 to-[#FDFCF8]" />
-      </div>
+    <section className="relative bg-[#FAFAF9] text-stone-900 overflow-hidden py-20 lg:py-28">
+      {/* Background Lighting Effects (Adjusted for Light Mode) */}
 
-      <div className="relative z-10 w-full container mx-auto px-6 lg:px-12 pt-25 pb-16 sm:px-8 md:text-center">
-        <div className="flex flex-col items-center">
-          {/* Top Tagline */}
-          <div className=" items-center gap-2 mb-6 opacity-0 animate-fade-in-down hidden md:flex">
-            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 text-orange-600 shadow-sm">
-              <Heart className="w-4 h-4 fill-current" />
-            </span>
-            <span className="text-xs font-bold tracking-widest text-stone-600 uppercase">
-              Forever in our hearts
-            </span>
-          </div>
-
-          {/* Main Headline 
-              - text-4xl: Base size for mobile (readable, not overwhelming)
-              - sm:text-6xl: Tablet size
-              - lg:text-8xl: Desktop size
-          */}
-          <h1 className="font-serif text-4xl font-bold sm:text-6xl lg:text-8xl text-stone-900 leading-[1.15] tracking-tight mb-6 text-center drop-shadow-sm opacity-0 animate-fade-in-up delay-100">
-            Create a Living Tribute
-            <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-600 italic px-1">
-              That Lasts Forever{' '}
-            </span>
-          </h1>
-
-          {/* Subheadline 
-              - text-base: Base size for mobile
-              - md:text-xl: Larger on desktop
-          */}
-          <p className="font-sans text-base sm:text-lg md:text-2xl text-stone-700 max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed text-center opacity-0 animate-fade-in-up delay-200">
-            A digital remembrance page where stories, photos, and love live
-            on—shared with family and preserved for generations.
-          </p>
-
-          {/* Action Buttons 
-              - flex-col: Stack buttons vertically on mobile (full width)
-              - sm:flex-row: Side-by-side on tablet+
-          */}
-          <div className="w-full sm:w-auto flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up delay-300">
-            {/* Primary Button */}
-
-            <motion.button
-              initial={{ backgroundColor: '#1c1917' }} // stone-900
-              whileHover={{ backgroundColor: '#ea580c' }} // orange-600
-              whileTap={{ scale: 0.97 }}
-              transition={{ duration: 0.3 }}
-              className="w-full sm:w-auto px-5 md:px-8 py-4 
-  text-white rounded-full md:text-lg font-bold 
-  shadow-xl shadow-stone-900/10 cursor-pointer"
-            >
-              <span className="flex items-center justify-center">
-                Start a Legacy Page (Free)
-                <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </span>
-            </motion.button>
-
-            {/* Secondary Button */}
-            <button className="w-full sm:w-auto px-8 py-4 text-stone-700 bg-white/80 backdrop-blur-sm border border-stone-200 rounded-full text-lg font-medium active:bg-stone-100 hover:bg-white hover:border-stone-300 transition-all shadow-sm cursor-pointer">
-              See Example Pages
-            </button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 opacity-0 animate-fade-in-up delay-500">
-            <div className="flex text-orange-400">
-              {[1, 2, 3, 4, 5].map(i => (
-                <Star key={i} className="w-4 h-4 fill-current" />
-              ))}
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* LEFT: Text Content */}
+          <div className="max-w-2xl">
+            <div className="md:inline-flex hidden items-center gap-2 px-3 py-1 rounded-full bg-white border border-stone-200 shadow-sm text-stone-600 text-sm font-medium mb-8 ">
+              <div className="flex -space-x-2">
+                <div className="w-5 h-5 rounded-full bg-stone-300 border border-white"></div>
+                <div className="w-5 h-5 rounded-full bg-stone-400 border border-white"></div>
+                <div className="w-5 h-5 rounded-full bg-stone-500 border border-white"></div>
+              </div>
+              <span className="pl-1 ">Trusted by 10,000+ families</span>
             </div>
-            <p className="text-sm font-medium text-stone-500">
-              Loved by 10,000+ families
+
+            <h1 className="text-5xl lg:text-6xl font-serif font-medium leading-[1.1] mb-6 text-stone-900">
+              Create a Living Tribute That{' '}
+              <span className="italic text-stone-500">Lasts Forever</span>
+            </h1>
+
+            <p className="text-lg text-stone-600 mb-8 leading-relaxed max-w-lg">
+              A digital remembrance page where stories, photos, and love live
+              on—shared with family and preserved for generations.
             </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              {/* FIXED BUTTON */}
+              <motion.button
+                initial={{ backgroundColor: '#1c1917' }} // stone-900
+                whileHover={{ backgroundColor: '#ea580c' }} // orange-600
+                whileTap={{ scale: 0.97 }}
+                transition={{ duration: 0.3 }}
+                className="w-full sm:w-auto px-8 py-4 text-white rounded-full md:text-lg font-bold shadow-xl shadow-stone-900/10 cursor-pointer group"
+              >
+                <span className="flex items-center justify-center gap-2">
+                  Start a Legacy Page (Free)
+                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </span>
+              </motion.button>
+
+              <button className="inline-flex justify-center items-center px-8 py-4 bg-white border border-stone-300 text-stone-800 rounded-full font-medium text-lg transition-colors hover:bg-stone-100 group">
+                See Example Pages
+                <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
+
+            <div className="mt-8 flex items-center gap-4 text-sm text-stone-500 font-medium">
+              <span className="flex items-center gap-1">
+                <Star className="w-4 h-4 text-orange-400 fill-orange-400" />{' '}
+                4.9/5 Rating
+              </span>
+              <span>•</span>
+              <span>No credit card required</span>
+            </div>
+          </div>
+
+          {/* RIGHT: Visual Component (Dark Contrast Card) */}
+          <div className="relative group perspective-1000 mt-10 lg:mt-0">
+            {/* Glow behind the card */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-amber-200 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+
+            {/* MAIN CARD CONTAINER */}
+            <div className="relative bg-[#FAFAF9] border border-stone-200 rounded-2xl shadow-2xl overflow-hidden min-h-[550px] transform transition-transform md:rotate-y-12 md:group-hover:rotate-y-0 duration-700">
+              {/* 1. HERO IMAGE AREA */}
+              <div className="h-52 relative">
+                <img
+                  src="https://i.ibb.co.com/JWmSCwLj/cover.jpg"
+                  className="w-full h-full object-cover opacity-90"
+                  alt="Background"
+                />
+                {/* Gradient blends into the light background now */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#FAFAF9] via-transparent to-transparent"></div>
+
+                {/* Navbar simulation */}
+                <div className="absolute top-4 left-6 right-6 flex justify-between items-center">
+                  <div className="text-white font-serif italic text-lg drop-shadow-md">
+                    In Loving Memory
+                  </div>
+                  <button className="bg-white/20 backdrop-blur-md text-white text-xs px-3 py-1 rounded border border-white/30 hover:bg-white/30 transition">
+                    Share
+                  </button>
+                </div>
+              </div>
+
+              {/* 2. PROFILE SECTION */}
+              <div className="relative px-8 -mt-26 text-center">
+                <div className="inline-block relative">
+                  <div className="w-32 h-32 rounded-full border-4 border-white overflow-hidden shadow-xl bg-stone-200 mx-auto">
+                    <img
+                      src="https://i.ibb.co.com/qM3Dw92f/Profile.jpg"
+                      className="w-full h-full object-cover"
+                      alt="Profile"
+                    />
+                  </div>
+                  {/* Heart Icon Badge */}
+                  <div className="absolute bottom-1 right-1 bg-amber-500 rounded-full p-1.5 border-4 border-white shadow-sm">
+                    <Heart className="w-4 h-4 text-white fill-white" />
+                  </div>
+                </div>
+
+                <div className="mt-3 mb-8">
+                  {/* Text changed to Dark Stone for visibility */}
+                  <h2 className="text-3xl font-serif text-stone-900 mb-1">
+                    James "Jim" Sullivan
+                  </h2>
+                  <p className="text-amber-600 font-medium tracking-widest text-xs uppercase">
+                    1945 — 2024
+                  </p>
+                </div>
+              </div>
+
+              {/* 3. CONTENT GRID (Inside the Card) */}
+              <div className="px-6 pb-6 space-y-4">
+                {/* Story Card */}
+                <div className="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                  <div className="flex items-center gap-2 mb-2">
+                    <MessageSquare className="w-3 h-3 text-orange-400" />
+                    <span className="text-xs font-bold text-orange-800 uppercase">
+                      Recent Story
+                    </span>
+                  </div>
+                  <p className="text-sm text-stone-700 italic font-serif leading-relaxed">
+                    "Grandpa always had the warmest smile. I remember the
+                    summers we spent in her garden..."
+                  </p>
+                </div>
+
+                {/* Gallery & Video Row */}
+                <div className="grid grid-cols-2 gap-3">
+                  {/* Gallery */}
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <ImageIcon className="w-3 h-3 text-stone-400" />
+                      <span className="text-[10px] font-bold text-stone-400 uppercase">
+                        Gallery
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="aspect-square bg-stone-200 rounded-lg overflow-hidden">
+                        <img
+                          src="https://i.ibb.co.com/21wGfVq5/Image-3.jpg"
+                          className="w-full h-full object-cover"
+                          alt="mem1"
+                        />
+                      </div>
+                      <div className="aspect-square bg-stone-200 rounded-lg overflow-hidden">
+                        <img
+                          src="https://i.ibb.co.com/5wZscjG/Image-2.jpg"
+                          className="w-full h-full object-cover"
+                          alt="mem2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Video */}
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <Play className="w-3 h-3 text-stone-400" />
+                      <span className="text-[10px] font-bold text-stone-400 uppercase">
+                        Tribute Video
+                      </span>
+                    </div>
+                    <div className="aspect-video bg-stone-900 rounded-lg overflow-hidden relative group cursor-pointer">
+                      <img
+                        src="https://i.ibb.co.com/xKBJqJfj/Image-1.jpg"
+                        className="w-full h-full object-cover opacity-60"
+                        alt="video thumb"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-8 h-8 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform">
+                          <Play className="w-3 h-3 text-white fill-white ml-0.5" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Animations remain the same */}
-      <style jsx>{`
-        .delay-100 {
-          animation-delay: 100ms;
-        }
-        .delay-200 {
-          animation-delay: 200ms;
-        }
-        .delay-300 {
-          animation-delay: 300ms;
-        }
-        .delay-500 {
-          animation-delay: 500ms;
-        }
-
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        @keyframes fade-in-down {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        @keyframes pan-slow {
-          0% {
-            transform: scale(1.1);
-          }
-          100% {
-            transform: scale(1.2);
-          }
-        }
-
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-        }
-        .animate-fade-in-down {
-          animation: fade-in-down 0.8s ease-out forwards;
-        }
-        .animate-pan-slow {
-          animation: pan-slow 25s ease-in-out infinite alternate;
-        }
-      `}</style>
     </section>
   );
 };
