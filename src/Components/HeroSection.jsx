@@ -18,13 +18,14 @@ const HeroSection = () => {
       {/* Background Lighting Effects (Adjusted for Light Mode) */}
       {/* <div className="absolute inset-0 z-0">
         <img
-          src="https://i.ibb.co.com/FkYGCy8T/banner.jpg"
+          src="https://i.ibb.co.com/2LCF7fp/banner2.jpg"
           alt="Background Texture"
-          className="w-full h-full object-cover opacity-5" // Keep opacity low (5%) for a "watermark" feel
+          className="w-full h-full object-cover opacity-20" // Keep opacity low (5%) for a "watermark" feel
         />
         
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-[#FDFCF8] via-transparent to-bg-[#FDFCF8]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAF9] via-transparent to-[#FAFAF9]"></div>
       </div> */}
+
       <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT: Text Content */}
@@ -63,7 +64,7 @@ const HeroSection = () => {
                 </span>
               </motion.button>
 
-              <button className="inline-flex justify-center items-center px-8 py-4 bg-white border border-stone-300 text-stone-800 rounded-full font-medium text-lg transition-colors hover:bg-stone-100 group">
+              <button className="inline-flex justify-center items-center px-8 py-4 bg-white border border-stone-300 text-stone-800 rounded-full font-medium text-lg transition-colors hover:bg-stone-100 group cursor-pointer">
                 See Example Pages
                 <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
