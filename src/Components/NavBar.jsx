@@ -57,8 +57,8 @@ const NavBar = () => {
 
           {/* --- DESKTOP MENU --- */}
           <div className="hidden md:flex items-center space-x-10">
-            <NavLink href="/pricing" text="Pricing" />
-            <NavLink href="/examples" text="Examples" />
+            <NavLink href="#pricing" text="Pricing" />
+            <NavLink href="#examples" text="Examples" />
             <NavLink href="/dashboard" text="Dashboard" />
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -95,12 +95,12 @@ const NavBar = () => {
               className="flex flex-col items-center space-y-8 w-full max-w-sm"
             >
               <MobileNavLink
-                href="/pricing"
+                href="#pricing"
                 text="Pricing"
                 onClick={() => setIsOpen(false)}
               />
               <MobileNavLink
-                href="/examples"
+                href="#examples"
                 text="Examples"
                 onClick={() => setIsOpen(false)}
               />

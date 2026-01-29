@@ -50,7 +50,10 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="relative w-full py-24 lg:py-32 bg-[#FDFCF8]">
+    <section
+      id="pricing"
+      className="relative  w-full py-24 lg:py-32 bg-[#FDFCF8]"
+    >
       {/* Background Texture */}
       {/* <div className="absolute inset-0 opacity-[0.5] bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')] mix-blend-multiply pointer-events-none" /> */}
 
