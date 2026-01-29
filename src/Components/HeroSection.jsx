@@ -14,9 +14,17 @@ import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-[#FAFAF9] text-stone-900 overflow-hidden py-20 lg:py-28">
+    <section className="relative bg-[#FDFCF8] text-stone-900 overflow-hidden py-20 lg:py-28">
       {/* Background Lighting Effects (Adjusted for Light Mode) */}
-
+      {/* <div className="absolute inset-0 z-0">
+        <img
+          src="https://i.ibb.co.com/FkYGCy8T/banner.jpg"
+          alt="Background Texture"
+          className="w-full h-full object-cover opacity-5" // Keep opacity low (5%) for a "watermark" feel
+        />
+        
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-[#FDFCF8] via-transparent to-bg-[#FDFCF8]"></div>
+      </div> */}
       <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT: Text Content */}

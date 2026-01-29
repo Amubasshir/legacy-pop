@@ -53,7 +53,7 @@ const ExamplesAndProof = () => {
   ];
 
   return (
-    <section className="relative w-full py-24 lg:py-32 bg-[#FAFAF9] overflow-hidden">
+    <section className="relative w-full py-24 lg:py-32 bg-[#FDFCF8] overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-2/3 h-full bg-orange-50/30 skew-x-12 transform translate-x-1/3 pointer-events-none" />
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-stone-200/50 rounded-full blur-[80px] pointer-events-none" />
